@@ -11,5 +11,23 @@
 
 <body>                                                                           <!-- body holds what the vistors will see, the entire website eventually goes there -->
 
+    <header>                                                                     <!-- header tells the browser "this is the introductory area of the page". It also helps accessibility and search engines understand the page structure-->
+        <a href="/" class="logo">Sept Cascades Guide</a>                          <!-- class gives CSS a way to identify the element(come back to this later) -->
+
+        <nav>                                                                     <!-- nav means the links are naviguation links. -->
+            <a href="#hikes">Hikes</a>
+            <a href="about">About</a>
+            <a href="reviews">Reviews</a>
+            <a href="faq">FAQ</a>
+        </nav>
+
+
+        <div class="language-switcher">
+            <button type="button">EN</button>
+            <button type="button">FR</button>
+        </div>
+        <a href="#booking" class="button">Book Your Hike</a>
+    </header>
+
     <script src="js/script.js"></script>                                         <!-- browser reads html from top to bottom. HTML comes first, then javascript loads-->
 </body>
