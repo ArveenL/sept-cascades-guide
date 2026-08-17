@@ -1,13 +1,47 @@
 <!DOCTYPE html>                                                                 <!-- tells the browser this is a html5 document -->
 <html lang="en">                                                               <!-- html starts the HTML document. "eng" tells the browser main language is English; This also helps with search engines, etc -->
 <head>                                                                          <!-- head contains info about the webpage, later we'll add things such as page title, SEO description, CSS files, mobile settings etc -->
+    <meta charset="UTF-8">                                                      <!-- tells browser encoding so that special characters like euro sign don't break the system-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- meta tells the browser how to display page on a device -->
+    <link rel="canonical" href="https://YOUR_DOMAIN.com/">                       <!-- replace yourdomain with actual domain later-->
     <title>Sept Cascade Hiking | Local Guide in Mauritius</title>               <!-- title is what we see in browser tab -->
     <meta name="description" content="Explore Sept Cascades in Mauritius with a local guide with 15+ years of experience. Choose 3, 4 or 7 waterfalls hike and book your experience">  <!-- meta gives search engines a short description of the website-->
-    <link rel="stylesheet" href="css/style.css">                                 <!-- link connects css to html, html creates structure, css controls appearance -->   
+    <link rel="stylesheet" href="css/style.css">                                 <!-- link connects css to html, html creates structure, css controls appearance -->
 
+    <!-- robots: explicitly tells search engines to index this page and follow its links -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph: controls how your page appears when shared on social media (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="Sept Cascade Hiking | Local Guide in Mauritius">
+    <meta property="og:description" content="Hike Sept Cascades with a local guide. Choose 3, 4 or 7 waterfalls. 15+ years experience. Book now.">
+    <meta property="og:image" content="https://YOUR_DOMAIN.com/images/og-image.jpg">
+    <meta property="og:url" content="https://YOUR_DOMAIN.com/">
+    <meta property="og:type" content="website">
+
+    <!-- favicon: browser tab icon. Add your .ico or .png file to images/ folder -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- theme-color: colors the mobile browser address bar -->
+    <meta name="theme-color" content="#1b5e20">
+
+    <!-- Structured data: helps Google show rich results (pricing, type of business) in search -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "Sept Cascades Hiking Guide",
+        "description": "Hike Sept Cascades in Mauritius with a local guide. Choose 3, 4 or 7 waterfalls.",
+        "telephone": "+23055023667",
+        "priceRange": "€20 - €40",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "MU"
+        }
+    }
+    </script>
 
 </head>
+
 
 <body>                                                                           <!-- body holds what the vistors will see, the entire website eventually goes there -->
 
@@ -17,6 +51,7 @@
         <nav>                                                                     <!-- nav means the links are naviguation links. -->
             <a href="#hikes">Hikes</a>
             <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
             <a href="#reviews">Reviews</a>
             <a href="#faq">FAQ</a>
         </nav>
@@ -45,36 +80,36 @@
         <div class="hike-cards">
             <article class="hike-card">
                 <h3>3 Waterfalls</h3>
-                <p class=""hike-type">Short Hike</p>
+                <p class="hike-type">Short Hike</p>
                 <p class="hike-duration">Duration: 1.5-3 hours</p>
                 <ul class="hike-prices">
                     <li>1-3 people: €20 per person</li>
                     <li>3-5 people: €15 per person</li>
-                    <li>>5+ people: €15 per person(included:  one or more assistant guides</li>
+                    <li>5+ people: €15 per person (included: one or more assistant guides)</li>
                 </ul>
                 <a href="#booking" class="button">Book This Hike</a>
             </article>
 
              <article class="hike-card">
                 <h3>4 Waterfalls</h3>
-                <p class=""hike-type">Medium Hike</p>
-                <p class="hike-duration">Duration: 1.5-3 hours</p>
+                <p class="hike-type">Mid-Day Hike</p>
+                <p class="hike-duration">Duration: 2.5-4 hours</p>
                 <ul class="hike-prices">
                     <li>1-3 people: €25 per person</li>
                     <li>3-5 people: €20 per person</li>
-                    <li>>5+ people: €20 per person(included: one or more assistant guides</li>
+                    <li>5+ people: €20 per person (included: one or more assistant guides)</li>
                 </ul>
                 <a href="#booking" class="button">Book This Hike</a>
             </article>
 
             <article class="hike-card">
                 <h3>7 Waterfalls</h3>
-                <p class=""hike-type">Medium Hike</p>
-                <p class="hike-duration">Duration: 1.5-3 hours</p>
+                <p class="hike-type">Full Hike</p>
+                <p class="hike-duration">Duration: 5-7 hours</p>
                 <ul class="hike-prices">
                     <li>1-3 people: €40 per person</li>
                     <li>3-5 people: €30 per person</li>
-                    <li>>5+ people: €30 per person(included: one or more assistant guides</li>
+                    <li>5+ people: €30 per person (included: one or more assistant guides)</li>
                 </ul>
                 <a href="#booking" class="button">Book This Hike</a>
             </article>
@@ -98,5 +133,64 @@
         </ul>
     </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a local guide from Mauritius with over 15 years of experience leading hikers through Sept Cascades. Born and raised near the trails, I know every path, every waterfall, and every hidden spot that most visitors never see.</p>
+        <p>Whether you are a first-time visitor or a returning adventurer, I will make sure you experience the best of Sept Cascades safely and memorably.</p>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/optimized/gallery-1.webp" alt="Scenic view of the first waterfall at Sept Cascades, Mauritius">
+            <img src="images/optimized/gallery-2.webp" alt="Hiking trail surrounded by lush tropical vegetation">
+            <img src="images/optimized/gallery-3.webp" alt="Group of hikers crossing a river during a Sept Cascades trek">
+            <img src="images/optimized/gallery-4.webp" alt="Crystal clear pool at the base of a waterfall">
+            <img src="images/optimized/gallery-5.webp" alt="Aerial view of Sept Cascades surrounded by green forest">
+            <img src="images/optimized/gallery-6.webp" alt="Local guide pointing out landmarks on the hiking trail">
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="reviews">
+        <h2>Reviews</h2>
+        <p>Reviews coming soon. Have you hiked with us? Share your experience on Google or WhatsApp!</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>FAQ section coming soon. Have a question? Contact us on WhatsApp at <a href="https://wa.me/23055023667">+230 5502 3667</a>.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Sept Cascades Guide</h3>
+                <p>Your local hiking guide in Mauritius</p>
+                <p><a href="https://wa.me/23055023667">WhatsApp: +230 550 23667</a></p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#hikes">Hikes</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p>Add your social media links here</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sept Cascades Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>                                         <!-- browser reads html from top to bottom. HTML comes first, then javascript loads-->
 </body>
+</html>

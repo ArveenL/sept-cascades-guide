@@ -1,3 +1,5 @@
 .env                # do not upload .env
 .env.*              # do not upload other .env files
 !.env.example       # allow .env.example to be uploaded
+node_modules/       # do not upload npm dependencies
+images/originals/   # raw images are too large for git

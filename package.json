@@ -1,0 +1,16 @@
+{
+  "name": "sept-cascades-guide",
+  "version": "1.0.0",
+  "description": "Sept Cascades Hiking Guide Website",
+  "scripts": {
+    "compress": "node scripts/compress.js",
+    "compress:once": "node scripts/compress.js --once"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "sharp": "^0.35.3"
+  }
+}
